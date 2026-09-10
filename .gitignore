@@ -27,3 +27,9 @@ MANIFEST
 # Environments
 .venv
 venv/
+
+# Vale styles synced from @truvo/house-style by postinstall; see .vale.ini
+.vale/styles
+
+# Only present for the @truvo/house-style vale styles; the runtime is Python.
+node_modules

@@ -215,7 +215,7 @@ class CodeArtifactBackend(backend.KeyringBackend):
         # Generate a CodeArtifact client using the callback.
         client = self.make_client(options)
 
-        # Authorization tokens should be good for an hour by default.
+        # Request a token lifetime of an hour unless token_duration sets one.
         token_duration = int(config.get("token_duration", 3600))
 
         # Ask for an authorization token using the current AWS credentials.

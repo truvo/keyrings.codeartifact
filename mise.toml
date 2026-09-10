@@ -1,0 +1,4 @@
+[tools]
+bun = "1.4.0"
+# House-style linter; the styles come from @truvo/house-style (see .vale.ini).
+vale = "3.19.0"

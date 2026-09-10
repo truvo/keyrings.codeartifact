@@ -1,0 +1,15 @@
+{
+  "lockfileVersion": 2,
+  "configVersion": 1,
+  "workspaces": {
+    "": {
+      "name": "keyrings-codeartifact",
+      "devDependencies": {
+        "@truvo/house-style": "0.7.4",
+      },
+    },
+  },
+  "packages": {
+    "@truvo/house-style": ["@truvo/house-style@0.7.4", "https://truvo-270023013469.codeartifact.us-east-2.on.aws/npm/npm-internal/@truvo/house-style/-/house-style-0.7.4.tgz", { "bin": { "truvo-house-style-sync": "bin/truvo-house-style-sync" } }, "sha512-/ZUZl2cBm98WyrkhBuXbrTYh+JjSrOEjbC0hrDSaLLq7ZfNRFiEVtD7IMwLg2MRxmKDIM7li8l2aaNGm4GWPxQ=="],
+  }
+}

@@ -31,6 +31,12 @@ Repository = "https://github.com/jmkeyes/keyrings.codeartifact.git"
 [project.entry-points."keyring.backends"]
 AWS-CodeArtifact = "keyrings.codeartifact"
 
+# Discovery is explicit: the vale wiring in package.json puts node_modules at
+# the root, and setuptools' flat-layout auto-discovery refuses to build with a
+# second top-level directory beside keyrings/.
+[tool.setuptools.packages.find]
+include = ["keyrings*"]
+
 [tool.setuptools.dynamic.dependencies]
 file = ["requirements.txt"]
 
