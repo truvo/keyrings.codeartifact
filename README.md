@@ -25,7 +25,7 @@ hosted within CodeArtifact. It will use any appropriate AWS credentials provided
 
 Config
 ------
-This backend provides a number of configuration options to modify the behaviour of the AWS client.
+This backend provides a number of configuration options to modify the behavior of the AWS client.
 
 The configuration options can be specified within `[codeartifact]` sections of the `keyringrc.cfg`.
 
@@ -70,7 +70,7 @@ Each section may also have any of the following "qualifiers" in any order:
 
 When looking up a CodeArtifact URL, each matching qualifier ranks that section higher.
 
-The section with highest score (ie: the most specific match) will be selected for that URL.
+The section with highest score (that is, the most specific match) will be selected for that URL.
 
 When configured in this manner, the `codeartifact` section will specify default values.
 
